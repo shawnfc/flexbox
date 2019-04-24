@@ -1,0 +1,55 @@
+.container-1 div,
+.container-2 div {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+
+
+.container-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-2-box {
+    flex-basis: 27%;
+}
+
+.box-1 {
+    // width ration
+    flex: 1;
+
+    // change order
+    order: 2;
+}
+
+.box-2 {
+    // width ration
+    flex: 1;
+
+    // change order
+    order: 1;
+}
+
+.box-3 {
+    // width ration
+    flex: 1;
+
+    // change order
+    order: 3;
+}
+
+@media(min-width: 468px) {
+    .container-1 {
+        // put divs side-by-side in available space
+        display: flex;
+        /* default/horizontal is "stretch */
+
+        // alignment
+        align-items: flex-start;
+        /* start, end or center */
+
+        // vertical align
+        flex-direction: column;
+    }
+}
